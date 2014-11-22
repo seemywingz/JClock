@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="JClock:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JClock_jar</output-path>
+    <root id="archive" name="JClock.jar">
+      <element id="module-output" name="JClock" />
+    </root>
+  </artifact>
+</component>
