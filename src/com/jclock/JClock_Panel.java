@@ -52,8 +52,9 @@ public class JClock_Panel extends JPanel {
 					try{
 						timeLabel.setText(Options.clockStyle.format(now));
                         timeLabel.setForeground(Options.color);
+						now = new Date();
 						repaint();
-						Thread.sleep(10);
+						Thread.sleep(30);
 					}catch(Exception e){}
 				}
 			}
