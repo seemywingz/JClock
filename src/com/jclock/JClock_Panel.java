@@ -22,6 +22,8 @@ public class JClock_Panel extends JPanel {
 	JClock_Panel() {addMouseListener(mkMouseAdapter());
 		setLayout(null);
 		setBounds(JClock.main.getBounds());
+		setBackground(new Color(0,0,0,0));
+		setOpaque(false);
 		
 		addMouseMotionListener(mkMouseAdapter());
 		setFocusable(true);
@@ -40,7 +42,7 @@ public class JClock_Panel extends JPanel {
 		timeLabel.setBounds(1, 0, getWidth(),getHeight());
 		timeLabel.setFont (timeLabel.getFont ().deriveFont (60f));//change font size
 		timeLabel.setBackground(new Color(0,0,0,0));
-		timeLabel.setOpaque(true);
+		timeLabel.setOpaque(false);
 		add(timeLabel);
 	
 		new Thread(new Runnable() {			

@@ -2,11 +2,7 @@ package com.jclock;
 
 import java.awt.Color;
 
-import javax.swing.BorderFactory;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
-import javax.swing.UIDefaults;
-import javax.swing.UIManager;
+import javax.swing.*;
 import javax.swing.border.EtchedBorder;
 
 public class JClock extends JDialog{
@@ -15,6 +11,7 @@ public class JClock extends JDialog{
 	static Jclock_Menu menu;
 	
 	JClock(){
+
 		main = this;
 		menu = new Jclock_Menu();
 		
@@ -25,6 +22,7 @@ public class JClock extends JDialog{
 		setLocationRelativeTo(null);	
 		setBackground(new Color(0,0,0,0));
 		setContentPane(new JClock_Panel());
+		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		setVisible(true);	
 		
 	}//...	

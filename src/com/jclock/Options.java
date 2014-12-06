@@ -17,4 +17,5 @@ public class Options {
 
     static Color color = Color.GREEN;
     static Vector<Color> colors = new Vector<Color>();
+
 }// end Options
